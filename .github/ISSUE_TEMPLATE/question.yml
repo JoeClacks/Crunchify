@@ -1,0 +1,14 @@
+name: Ask a question
+description: About the site, its privacy policy or its terms.
+labels: [question]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **This issue will be public.** Don't paste passwords, tokens or personal details. A copyright notice goes to the private address on https://crunchify.net/copyright instead.
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+    validations:
+      required: true

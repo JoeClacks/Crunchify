@@ -1,0 +1,39 @@
+name: Something's broken
+description: A tool gives a wrong answer, misbehaves, or won't load.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **This issue will be public.** Don't paste passwords, tokens or personal details. If you came here from crunchify.net, the page address below was filled in without the part after `#`, which is where tools keep what you typed.
+  - type: input
+    id: tool
+    attributes:
+      label: Tool
+      placeholder: Unit Converter
+  - type: input
+    id: page
+    attributes:
+      label: Page
+      placeholder: https://crunchify.net/tools/unit-converter
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, and what you saw.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and device
+      placeholder: Firefox 131 on Android
+  - type: input
+    id: platform
+    attributes:
+      label: Web site or Android app
+      placeholder: Web
